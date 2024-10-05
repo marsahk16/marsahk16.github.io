@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>My Profile</title>
+    </head>
+    <body>
+        <center>
+        <img src="Screenshot (1137).png" style="width:260px;height:260px;border-radius: 100%;"></img>
+        <p><b><u>Marsa Haekal</u></b></p>
+        <p><b><u>120222</u></b></p>
+        <p><b><u>S1 Sistem Informasi</u></b></p>
+        <p><i>SI-46-04</i></p>
+        <p1><a href="https://www.facebook.com/marsa.haekal.1" target="_blank">
+            <img src="WhatsApp Image 2024-09-28 at 19.03.51_bf07a31c.jpg" style="width:64px;height:64px;">
+        </a></p1>
+        <p1><a href="https://www.instagram.com/marsahaekalll/" target="_blank">
+            <img src="WhatsApp Image 2024-09-28 at 19.01.39_17ba36df.jpg" style="width:64px;height:64px;">
+        </a></p1>
+        <p1><a href="https://www.youtube.com/@marsahaekal538" target="_blank">
+            <img src="WhatsApp Image 2024-09-28 at 19.01.37_030c162f.jpg" style="width:64px;height:64px;">
+        </a></p1>
+        </center>
+    </body>
+        
+    <body onload="displayDateTime()">
+        <h2 align="right">Tanggal: <span id="date"></span></h2>
+        <h2 align="right">Waktu: <span id="time"></span></h2></style>
+    </body>
+        
+    <script>
+        function displayDateTime() {
+            var now = new Date();
+            var date = now.toLocaleDateString();
+            var time = now.toLocaleTimeString();
+
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("time").innerHTML = time;
+        }
+        setInterval(displayDateTime, 1000);
+    </script>
+    
+    
+</html>
